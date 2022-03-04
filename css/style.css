@@ -10,17 +10,18 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: #666;	/*全体の文字色*/
-	font-family:"游明朝","Yu Mincho","游明朝体","YuMincho","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo, Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;	/*フォント指定*/
+	font-family:sans-serif;	/*フォント指定*/
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
 	background: #fff;	/*背景色*/
 	-webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+p {margin: 0px;padding: 0px;font-size: 80%;font-weight: normal;}
 ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
-table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+img {border: none;max-width: 100%;padding-left: 40px;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;border-spacing:0;font-size: 80%;display:table}
 iframe {width: 100%;}
 
 /*リンク（全般）設定
@@ -154,7 +155,7 @@ header #logo {
 	letter-spacing: 0.1em;	/*文字間隔を広くとる設定*/
 	background: #fff;		/*背景色（古いブラウザ用）*/
 	background: rgba(255,255,255,0.3);	/*255,255,255は白の事で0.3は30%色がついた状態の事。*/
-	text-align: center;		/*文字を中央に*/
+	text-align: left;		/*文字を中央に*/
 	border-radius: 30px;	/*角丸のサイズ。大きめに設定しておけばOK。*/
 	padding: 0px 20px;		/*上下、左右への余白*/
 }
@@ -293,34 +294,20 @@ footer .pr {display: block;}
 	padding-left: 9em;
 }
 
-/*テーブル（ta1）
+/*テーブル
 ---------------------------------------------------------------------------*/
-/*ta1設定*/
-.ta1 {
-	width: 100%;
-	margin: 0 auto 20px;
+.w3-table td.label-ja {
+	text-align: left;
+	text-indent:3em;
+	font-weight:bold;
+    padding: 0px;
+    border: 0px;
 }
-.ta1, .ta1 td, .ta1 th {
-	border: 1px solid #999;	/*テーブルの枠線の幅、線種、色*/
-	background: #fff;	/*背景色*/
-	padding: 10px 15px;	/*ボックス内の余白*/
-	word-break: break-all;
-}
-/*テーブル１行目に入った見出し部分*/
-.ta1 th.tamidashi {
-	width: auto;
-	text-align: left;	/*左よせ*/
-	background: #eee;	/*背景色*/
-}
-/*ta1の左側ボックス*/
-.ta1 th {
-	width: 140px;	/*幅*/
-	text-align: center;	/*センタリング*/
-	font-weight: normal;
-}
-/*左側ボックスに画像を入れた場合の設定*/
-.ta1 th img {
-	width: 100%;
+.w3-table td {
+	text-align: left;
+	text-indent:3em;
+    padding: 0px;
+    border: 0px;
 }
 
 /*ページの上部に戻る「↑」ボタン
