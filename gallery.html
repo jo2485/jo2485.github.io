@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JUN OGAWA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="小川純の個人WEBサイト">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/flag-icons.min.css" type="text/css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+  
+  <header>
+  <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+  <!--スライドショー-->
+  <aside id="mainimg">
+  <img src="images/1.png" alt="" class="slide0">
+  <img src="images/2.png" alt="" class="slide1">
+  <img src="images/3.png" alt="" class="slide2">
+  <img src="images/4.png" alt="" class="slide3">
+  </aside>
+  </header>
+
+<div id="contents">
+
+<div id="main">
+
+<section>
+
+<h2>Gallery</h2>
+
+<h3>植物</h3>
+
+<div class="photo-block">
+
+<div class="list">
+<a href="images_photo/1.jpg" data-lightbox="group1" data-title="黄色のバラの花">
+<figure><img src="images_photo/1_mini.jpg" alt="黄色のバラの花"></figure>
+</a>
+</div>
+
+<div class="list">
+<a href="images_photo/2.jpg" data-lightbox="group1" data-title="藤の花">
+<figure><img src="images_photo/2_mini.jpg" alt="藤の花"></figure>
+</a>
+</div>
+
+<div class="list">
+<a href="images_photo/3.jpg" data-lightbox="group1" data-title="蓮の葉">
+<figure><img src="images_photo/3_mini.jpg" alt="蓮の葉"></figure>
+</a>
+</div>
+
+<div class="list">
+<a href="images_photo/4.jpg" data-lightbox="group1" data-title="八重桜">
+<figure><img src="images_photo/4_mini.jpg" alt="八重桜"></figure>
+</a>
+</div>
+
+<div class="list">
+<a href="images_photo/5.jpg" data-lightbox="group1" data-title="白いバラ">
+<figure><img src="images_photo/5_mini.jpg" alt="白いバラ"></figure>
+</a>
+</div>
+
+<div class="list">
+<a href="images_photo/6.jpg" data-lightbox="group1" data-title="蓮の花">
+<figure><img src="images_photo/6_mini.jpg" alt="蓮の花"></figure>
+</a>
+</div>
+
+<div class="list">
+<a href="images_photo/7.jpg" data-lightbox="group1" data-title="バラの花">
+<figure><img src="images_photo/7_mini.jpg" alt="バラの花"></figure>
+</a>
+</div>
+
+<div class="list">
+<a href="images_photo/8.jpg" data-lightbox="group1" data-title="四つ葉のクローバー">
+<figure><img src="images_photo/8_mini.jpg" alt="四つ葉のクローバー"></figure>
+</a>
+</div>
+
+</div>
+<!--/.photo-block-->
+</section>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<p><a href="#"><img src="images/banner1.jpg" alt="採用情報" class="pc"></a>
+<a href="#"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a></p>
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+	<small>Copyright&copy; <a href="index.html">JUN OGAWA</a> All Rights Reserved.</small>
+	</footer>
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>

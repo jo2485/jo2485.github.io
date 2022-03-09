@@ -12,118 +12,126 @@
 <script src="js/fixmenu_pagetop.js"></script>
 </head>
 
-<body class="top">
+<body>
 
-<div id="container">
-
+  <div id="container">
+  
   <header>
-    <h1 id="logo">
-      <a href="index.html"><img src="images/logo.png" alt="小川純" class="pc">
-      </a></h1>
-    <!--PC用（801px以上端末）メニュー-->
-    <nav id="menubar">
-    <ul>
-    <li class="current"><a href="index.html">HOME</a></li>
-    <li><a href="about.html">Research</a></li>
-    <li><a href="access.html">LINKS</a></li>
-    </ul>
-    </nav>
-    </header>
-    
-    <!--小さな端末用（800px以下端末）メニュー-->
-    <nav id="menubar-s">
-    <ul>
-    <li class="current"><a href="index.html">HOME</a></li>
-    <li><a href="about.html">Research</a></li>
-    <li><a href="access.html">LINKS</a></li>
-    </ul>
-    </nav>
+  <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+  <!--スライドショー-->
+  <aside id="mainimg">
+  <img src="images/1.png" alt="" class="slide0">
+  <img src="images/2.png" alt="" class="slide1">
+  <img src="images/3.png" alt="" class="slide2">
+  <img src="images/4.png" alt="" class="slide3">
+  </aside>
+  </header>
+  
 
+<div id="contents">
 
-<div class="contents bg1">
-<section>
-<h3><b>研究紹介</b></h3>
-<p><big>研究業績の詳細については<a href="https://researchmap.jp/jun_ogawa" target="_blank">Researchmap</a>を参照（随時更新）</big></p>
-</section>
+<div id="main">
 
-<section>
-  <h3><b>やわらかアニマロイド</b></h3>
-  <p>
-    <img src="images/animaloid.png" width=50% height=50% align="right">
-  <b>やわらかアニマロイド</b>研究では，ソフト・ハイブリッド材料や3Dプリンティング構造を組み合わせた<b>やわらかモノづくり</b>して，<b>やわらかいモノから知能を創る方法</b>や，<b>3Dソフト材料だからこそ実現できるやわらかい機構</b>を開発します．<br>この研究は材料開発系、機構駆動系、感覚器学習系、表現系という４つの技術的柱を設けて進めています。
+<section id ="new">
+
+<h2>研究紹介</h2>
+
+<h3>クリエイティブ・ソフトマシンズ</h3>
+<p>クリエイティブ・ソフトマシンズの研究では，ソフト・ハイブリッド材料や3Dプリンティング構造を組み合わせた『やわらかモノづくり』を通して，やわらかいモノから知能を創る方法や，3Dソフト材料だからこそ実現できるやわらかい機構を開発します．<br>
+  <b>これまでの研究業績は<a href="https://researchmap.jp/jun_ogawa/" target="_blank">Research map</a>を参照</b></p>
+<dl>
+  <dt>PROJECT</dt>
+  <dd>やわらかアニマロイドプロジェクト</dd>
+  <dt>材料開発系</dt>
+  <dd><a href=#p1>代表的な研究事例はこちら</a><br>
+    3D印刷型形状記憶ゲルによる超ソフト材料の形状記憶・固定化・復元技術<br>
+    3D印刷型パラレル・クロス構造を用いた汎用性の高い変形機構の開発</a></dd>
+  <dt>機構駆動系</dt>
+  <dd><a href=#p2>代表的な研究事例はこちら</a><br>
+    3D印刷型変形構造とシリコーンシェルによるモジュール型空気圧アクチュエータの開発<br>
+    3D印刷型シリコーンによるハイドロゲルの膨潤変形過程の制御によるゲルロボティクス</dd>
+  <dt>感覚器学習系</dt>
+  <dd><a href=#p3>代表的な研究事例はこちら</a><br>
+    ヒューマン・ソフトマシン・インタラクションの開発<br>
+    ソフト材料の物性が物理レザバー計算精度に及ぼす因子の分析<br>
+    高分子材料の組合せによるマルチ物理（ソフトマター）レザバー計算による食感識別AI</dd>
+  <dt>表現系</dt>
+  <dd><a href=#p1>代表的な研究事例はこちら</a><br>
+    ゲル×人工生命技術の融合によるゲルライフの確立<br>
+    ゲルの演出的機能性を導出する材料の3D構造化</dd>
+  <dt>社会実装</dt>
+  <dd><a href=#p1>代表的な研究事例はこちら</a><br>
+    やわらかアニマロイド研究で発明された技術は積極的に知的財産化を目指し，<br>
+    ただ作るだけに留めず，生活空間に配置されて接した人にポジティブな効果を与えることを<br>
+    目指した活動を推進しています．</dd>
+  </dl>
+<p><img src="images/animaloid.png" width=90% height=90% align="center"></p>
+
+<h3>超ソフト・ハイブリッド材料によるやわらかアニマロイド『モデル・コマイヌ』の開発</h3>
+<p id="p1"><img src="images/komainu.jpg" width=25% height=25% align="right" hspace="20" vspace="20">柔らかい材料は衝撃を吸収したり，働いた力に応じて変形するなどの利点を持ちます．これらの材料を3D構造化するためには，その材料に対して離型性のよい型造形法や3Dプリンティング方法を選択し，材料のタック性（粘着性），硬化阻害性，自重に対する形状安定性を考慮した上で，材料を上手く使うアイディアを盛り込んでいく必要があります．この研究開発は硬い石造のイメージをもつコマイヌをモチーフに採用し，触れるまでは硬い印象をもちつつも，実際に手に触れると驚くほど柔らかい『人の脂肪』に似た触感になっており，相対する人に柔らかさを追究することでここまで生物感がでるのかを実感してもらうアニマロイドモデルをデザインしています．
 </p>
-  <br>
-  <table id="info-list" class="w3-table">
-    <tr><td class="label-ja">材料開発系</td>
-    <td class="contents">形状記憶ゲル，熱可塑性ポリウレタンなどの形状記憶性や含水性，粘弾性</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">をもつ独特な性質をもつ高分子材料を3Dプリントでしか実現できない柔軟</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">変形構造に造形し，革新的なやわらかプロダクトデザインを実現する材料</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">を追究しています．</td></tr>
-    <tr><td class="label-ja">機構駆動系</td>
-    <td class="contents">3Dプリント変形構造による空気圧アクチュエータモジュールやゲルの膨潤</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">変形を誘導するシリコーンアタッチメント等を作り出し，研究者に限らず</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">すぐに扱えて，かつこれまでに実現できなかった変形多様性をもつ動きを</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">即座に生み出してしまえるような技術を追究しています．</td></tr>
-    <tr><td class="label-ja">感覚器学習系</td>
-    <td class="contents">ソフトセンサとソフト材料の3D造形の組合せで取得できる物理データは</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">メモリ（記憶）のような性質をもっており，AI・機械学習を適用すると，</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">食品の食感や接触部位の識別精度の飛躍的な向上が期待できます．ここで</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">は企業と連携して，ソフトAIの社会実装を目指しています．</td></tr>
-    <tr><td class="label-ja">表現系</td>
-    <td class="contents">硬質のプラスチックや金属に対してソフト材料は力で勝負することが得意</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">ではないため，その物性を最大限生かせるアーティスティックな演出を，</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">高分子ゲルの3D構造化により実現し，ALIEF作品として昇華させる方法を</td></tr>
-    <tr><td class="label-ja"></td>
-    <td class="contents">を実践しています．</td></tr>
-  </table>
-  <br></section>
 
-</div>
-<!--/contents-->
+<h3>3D印刷型変形構造とシリコーンシェルによるオールソフトなアクチュエータモジュール『MORI-A』の開発</h3>
+<p id="p2"><img src="images/mori-a.png" width=66% height=66% align="right" hspace="20" vspace="20">
+  ソフトアクチュエータ（人工筋肉）はゴムなど素材で非常に強い荷重を持ち上げることができる伸縮構造が追究されています．しかし，一般的にこれらのアクチュエータは棒状になっているケースが多く，駆動モードを変更するためにはアクチュエータごと作り直す必要があるなどの使いづらさがあります．『MORI-A』は，この課題を打破するために生まれた技術で，立方体のボクセル形状を採用し均一なシリコーンシェルに変形を規定する構造だけを3Dプリントにより造形することで，内部構造を取り替えたり，ボクセルの向きを変えるだけで，容易に駆動モードを更新できるアクチュエータモジュールとなっています．そのため，全くロボットの空気圧アクチュエータの開発スキルを必要とせず，積み木のように繋ぎ合わせるだけでだれしもが手軽にソフトロボット開発ができてしまいます．<br>
+  J. Ogawa, T. Mori, Y. Watanabe, M. Kawakami, M. N. I. Shiblee and H. Furukawa,  <a href="https://ieeexplore.ieee.org/document/9691892" target="_blank">"MORI-A: Soft Vacuum-Actuated Module With 3D-Printable Deformation Structure"</a>, in IEEE Robotics and Automation Letters, vol. 7, no. 2, pp. 2495-2502, April 2022, doi: 10.1109/LRA.2022.3144789. 
+</p>
 
-<div class="contents bg2">
-  <section>
-    <h3><b>モジュラーソフトロボット『MORI-A』</b></h3>
-    <p>
-    TBA
-    </p>
+<h3>僅かなヤング率差に起因するシリコーン型フクロウアニマロイドによるヒューマン・ソフトマシン・インタラクション</h3>
+<p id="p3"><img src="images/owl.png" width=40% height=40% align="right" hspace="20" vspace="20">
+  実際の物理媒体に生じる非線形力学を機械学習に展開する計算手法に『物理レザバー計算』という概念があります．この研究では，ソフトマター×3Dプリンティングで開発されるやわらかアニマロイドにソフトセンサ―を搭載したときに得られる信号をソフトマターレザバー計算として活用できるかについて追究しています．このフクロウモデルはシリコーン内部に埋め込まれたピエゾフィルムセンサーからデータを受けとり，接触した部位判定をインタラクティブにどの程度精度で識別できるかという基礎検証（現在は100%で8分割部位を識別可能）に加え，ヤング率を少しだけ変えたときに物理レザバー計算による識別精度が最適化される機械学習のハイパーパラメータがどのようにチューニングされていくか詳細に分析しています．こうしたモデルはアカデミア研究という立ち位置のみならず，言語によるコミュニケーションが難しい小児などへの末梢神経障害の早期診断などへの応用を目指し，社会実装を進めています<br>
+  Ikuma Sudo, Jun Ogawa, Yosuke Watanabe, MD Nahin Islam Shiblee, Ajit, Khosla, Masaru Kawakami, Hidemitsu Furukawa,  <a href="#">"Local Discrimination Based on Piezoelectric Sensing in Robots Composed of Soft Matter with Different Physical Properties "</a>, in Journal of Robotics and Mechatronics, vol. 34, no. 2, April 2022. 
+</p>
+
 </section>
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<p><a href="#"><img src="images/banner1.jpg" alt="採用情報" class="pc"></a>
+<a href="#"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a></p>
 
 </div>
-<!--/contents-->
-
-<div class="contents bg3">
-  <section>
-    <h3><b>マルチ物理（ソフトマター）レザバーAI『GEL Biter』</b></h3>
-    <p>
-    TBA
-    </p>
+<!--/#sub-->
 
 </div>
-<!--/contents-->
+<!--/#contents-->
+
+</div>
+<!--/#container-->
 
 <footer>
-<small>Copyright&copy; <a href="index.html">JUN OGAWA</a> All Rights Reserved.</small>
-</footer>
+  <small>Copyright&copy; <a href="index.html">JUN OGAWA</a> All Rights Reserved.</small>
+  </footer>
 
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
 <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
-
-</div>
-<!--/container-->
 
 <!--メニュー開閉ボタン-->
 <div id="menubar_hdr" class="close"></div>
+
 <!--メニューの開閉処理条件設定　800px以下-->
 <script>
 if (OCwindowWidth() <= 800) {
